@@ -1,6 +1,13 @@
 
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
+import Header from "@/components/Header";
+import { ConvexClientProvider } from "./ConvexClientProvider";
+
+import {
+  ClerkProvider,
+ 
+} from '@clerk/nextjs'   
 
 
 
@@ -11,7 +18,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className="bg-linear-to-br from-gray-950 via-zinc-900 to-stone-900 text-white"
        suppressHydrationWarning>
@@ -20,8 +27,13 @@ export default function RootLayout({ children }) {
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
-          >
+          >   
 
+               <ClerkProvider>  
+
+           <ConvexClientProvider>
+
+              <Header/>
     <main className="relative min-h-screen container mx-auto pt-40 md:pt-32">
                 {/* Background glow effects (behind everything) */}
                 <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
@@ -32,6 +44,8 @@ export default function RootLayout({ children }) {
           <div className="relative z-10">{children}</div>
              
               </main>
+           </ConvexClientProvider>
+               </ClerkProvider>
         </ThemeProvider>
       </body>
     </html>
