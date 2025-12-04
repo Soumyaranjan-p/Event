@@ -8,6 +8,7 @@ import {
   ClerkProvider,
  
 } from '@clerk/nextjs'   
+import SyncUser from "@/components/SyncUser";
 
 
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
       <body
         className="bg-linear-to-br from-gray-950 via-zinc-900 to-stone-900 text-white"
        suppressHydrationWarning>
+
          <ThemeProvider
             attribute="class"
             defaultTheme="system"
@@ -32,6 +34,7 @@ export default function RootLayout({ children }) {
                <ClerkProvider>  
 
            <ConvexClientProvider>
+             <SyncUser />
 
               <Header/>
     <main className="relative min-h-screen container mx-auto pt-40 md:pt-32">
