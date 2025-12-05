@@ -9,7 +9,7 @@ import {
  
 } from '@clerk/nextjs'   
 
-import SyncUser from "@/components/syncUser";
+import SyncUser from "@/components/SyncUser";
 import Footer from "@/components/footer";
 
 
