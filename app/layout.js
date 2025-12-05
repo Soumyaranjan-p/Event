@@ -3,7 +3,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import Header from "@/components/Header";
 import { ConvexClientProvider } from "./ConvexClientProvider";
-
+import { Toaster } from "sonner";
 import {
   ClerkProvider,
  
@@ -47,6 +47,7 @@ export default function RootLayout({ children }) {
           <div className="relative z-10">{children}</div>
              
               </main>
+                <Toaster position="top-center" richColors />
            </ConvexClientProvider>
                </ClerkProvider>
         </ThemeProvider>
