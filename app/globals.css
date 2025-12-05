@@ -137,3 +137,21 @@
 .perspective-1000 {
   perspective: 1000px;
 }
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 10px rgba(168,85,247,0.4),
+                0 0 20px rgba(168,85,247,0.3);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(168,85,247,0.8),
+                0 0 45px rgba(168,85,247,0.6);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(168,85,247,0.4),
+                0 0 20px rgba(168,85,247,0.3);
+  }
+}
+
+.animate-pulse-glow {
+  animation: glowPulse 2.5s infinite;
+}
