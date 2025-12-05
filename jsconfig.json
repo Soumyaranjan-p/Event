@@ -1,8 +1,20 @@
-{
+// {
+//   "compilerOptions": {
+//     "baseUrl": ".",               // REQUIRED
+//     "paths": {
+//       "@/*": ["./*"]              // Your alias
+//     }
+//   }
+// }
+
+
+//for deployment
+  {
   "compilerOptions": {
-    "baseUrl": ".",               // REQUIRED
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]              // Your alias
+      "@/*": ["./*"]
     }
-  }
+  },
+  "exclude": ["node_modules"]
 }
