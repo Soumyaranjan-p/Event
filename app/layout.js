@@ -1,7 +1,7 @@
 
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
-import Header from "@/components/header";
+import Header from "@/components/Header";
 import { ConvexClientProvider } from "./ConvexClientProvider";
 import { Toaster } from "sonner";
 import {
