@@ -1,7 +1,10 @@
-https://event-fhf0z515l-soumyaranjan-ps-projects.vercel.app/
 
 ## Spott : A Next.js based AI-enhanced platform for creating, managing, and sharing events.
 Welcome to Spott, a modern event management platform where users can discover venues, plan events, and manage bookings effortlessly. Built with Next.js, Clerk, and Convex, it offers secure authentication, real-time data handling, and an intelligent AI layer for smart event decisions.
+
+
+ [![Live Demo](https://img.shields.io/badge/🚀-Live%20Demo-brightgreen)](https://event-fhf0z515l-soumyaranjan-ps-projects.vercel.app/)
+
 
 
 ![Landing Page](./public/screenshot/spott.png)
@@ -50,17 +53,72 @@ Welcome to Spott, a modern event management platform where users can discover ve
 - **ESLint** - Code linting
 - **Prettier** - Code formatting
 
+ 
+## Contributing & Installation
 
+### Installation
 
+1. **Clone the repository**
 
+   ```bash
 
+    # For Windows
 
+    # For Mac/Linux
 
+    cd spott
 
+    cd spott
+   ```
 
+2. **Install dependencies**
 
+```bash
+npm install
+```
 
+3. **Environment Setup**
+   Create a `.env.local` file with the following variables:
 
+   ```env
+   # Database
+   CONVEX_DEPLOYMENT=
 
-https://event-fhf0z515l-soumyaranjan-ps-projects.vercel.app/
+   NEXT_PUBLIC_CONVEX_URL=
+
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+   CLERK_SECRET_KEY=
+
+   NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+   NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+
+   CLERK_JWT_ISSUER_DOMAIN=
+
+   NEXT_PUBLIC_UNSPLASH_ACCESS_KEY=
+
+   GEMINI_API_KEY=
+
+   <!-- Check .env.example for all the vars -->
+
+   ```
+    
+4. **Database Setup**
+
+   ```bash
+   npx convex dev
+   ```
+
+5. **Start development server**
+
+   ```bash
+   npm run dev
+   
+   ```
+   
+
+## 📄 License
+
+This project is licensed under the **MIT License**.  
+See the [LICENSE](./LICENSE) file for more information.
+
 
