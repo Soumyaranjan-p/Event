@@ -3,7 +3,7 @@
 Welcome to Spott, a modern event management platform where users can discover venues, plan events, and manage bookings effortlessly. Built with Next.js, Clerk, and Convex, it offers secure authentication, real-time data handling, and an intelligent AI layer for smart event decisions.
 
 
- [![Live Demo](https://img.shields.io/badge/🚀-Live%20Demo-brightgreen)](event-7rvx.vercel.app)
+ [![Live Demo](https://img.shields.io/badge/🚀-Live%20Demo-brightgreen)](https://event-7rvx.vercel.app/))
 
 
 
